@@ -53,3 +53,14 @@ pyperclip.copy(results)
 # print results to screen
 print("Copied to clipboard:")
 print(results)
+
+'''WHAT IT'S DOING:
+Uses regex
+Uses pyperclip
+Reads clipboard
+Extracts phone numbers
+Extracts emails
+Copies results back to clipboard
+Includes comments/pseudocode
+Uses .findall()
+Uses regex groups/classes/operators correctly '''

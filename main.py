@@ -31,3 +31,4 @@ text = pyperclip.paste()
 
 # extract phone numbers and email addresses from text
 extracted_phone_numbers = phone_regex.findall(text)
+extracted_email_addresses = email_regex.findall(text)

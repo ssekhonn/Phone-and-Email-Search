@@ -32,3 +32,8 @@ text = pyperclip.paste()
 # extract phone numbers and email addresses from text
 extracted_phone_numbers = phone_regex.findall(text)
 extracted_email_addresses = email_regex.findall(text)
+
+# join extracted phone numbers and email addresses into a string with newlines in between
+extracted_phone_numbers = [phone[0] for phone in extracted_phone_numbers]
+extracted_email_addresses = [email[0] for email in extracted_email_addresses]
+results = '\n'.join(extracted_phone_numbers + extracted_email_addresses)
